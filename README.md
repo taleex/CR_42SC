@@ -28,7 +28,8 @@ The Piscine is built around practice. Each exercise is a small step toward under
 ## Repository Layout
 
 - Each `Cxx` directory contains its subject PDF and, where available, its exercises.
-- `SHELL00` and `SHELL01` contain the shell subjects and organized exercise files.
+- `SHELL00` and `SHELL01` contain the shell subjects and final exercise versions in `exXX` folders.
+- Duplicate shell test, retry, and submission folders were removed to keep only the final versions.
 - `C03/test1` keeps a separate set of C03 test solutions.
 - `rushes` contains the Rush project files.
 - `zip.tar` is retained as the original source archive.
