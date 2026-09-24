@@ -1,45 +1,58 @@
-# My 42 Piscine Path
+# 42 Piscine - Progress
 
-This repository records my journey through the 42 Piscine: a focused introduction to C programming, shell scripting, and the habits needed to solve problems independently.
+This repository is my path through the 42 Piscine.
 
-The Piscine is built around practice. Each exercise is a small step toward understanding how programs work, how to read a subject carefully, and how to write clear code under constraints.
+It contains the folders, exercises, and projects I worked on during the four weeks of the challenge. It is not a completed final archive, but it shows the work I did, the modules I studied, and the topics I practiced.
 
-## Progress
+## Project structure
 
-| Module    | Subject                        | Solutions           |
-| --------- | ------------------------------ | ------------------- |
-| `SHELL00` | Shell fundamentals             | Organized in folder |
-| `SHELL01` | Shell scripting                | Organized in folder |
-| `C00`     | Basic output and conditions    | Organized in folder |
-| `C01`     | Pointers and basic functions   | Organized in folder |
-| `C02`     | Strings and character handling | Organized in folder |
-| `C03`     | String manipulation            | Organized in folder |
-| `C04`     | Numbers and conversions        | Organized in folder |
-| `C05`     | Functions and recursion        | Organized in folder |
-| `C06`     | Program arguments              | Organized in folder |
-| `C07`     | Memory and arrays              | Subject available   |
-| `C08`     | Structures and headers         | Subject available   |
-| `C09`     | Libraries                      | Subject available   |
-| `C10`     | Function pointers              | Subject available   |
-| `C11`     | Advanced C concepts            | Subject available   |
-| `C12`     | Advanced C concepts            | Subject available   |
-| `C13`     | Advanced C concepts            | Subject available   |
+The repository is organized by module. Each folder contains the exercises or project files related to that part of the Piscine.
 
-## Repository Layout
+- `Shell00` and `Shell01`: shell basics and shell scripting exercises
+- `C00` to `C07`: core C exercises covering fundamentals, pointers, strings, number handling, recursion, and arguments
+- `Rushes`: larger project-style work
+- `BSQ`: project folder for the bigger challenge
+- `C08` to `C13`: later C modules and subjects that were not fully covered yet
 
-- Each `Cxx` directory contains its subject PDF and, where available, its exercises.
-- `SHELL00` and `SHELL01` contain the shell subjects and final exercise versions in `exXX` folders.
-- Duplicate shell test, retry, and submission folders were removed to keep only the final versions.
-- `C03/test1` keeps a separate set of C03 test solutions.
-- `rushes` contains the Rush project files.
-- `zip.tar` is retained as the original source archive.
+## Modules covered
 
-## What I Am Learning
+| Module    | Status              | Notes                                       |
+| --------- | ------------------- | ------------------------------------------- |
+| `Shell00` | Studied             | Shell basics and command-line exercises     |
+| `Shell01` | Studied             | Shell scripting and practical command usage |
+| `C00`     | Studied             | Basic C syntax, printing, conditions        |
+| `C01`     | Studied             | Pointers and memory basics                  |
+| `C02`     | Studied             | Strings and character handling              |
+| `C03`     | Studied             | String functions and manipulation           |
+| `C04`     | Studied             | Number conversion and parsing               |
+| `C05`     | Studied             | Recursion and mathematical functions        |
+| `C06`     | Studied             | Program arguments                           |
+| `C07`     | In progress         | Memory and array-related work               |
+| `C08`     | Not completed yet   | Subject available, work pending             |
+| `C09`     | Not completed yet   | Subject available, work pending             |
+| `C10`     | Not completed yet   | Subject available, work pending             |
+| `C11`     | Not completed yet   | Subject available, work pending             |
+| `C12`     | Not completed yet   | Subject available, work pending             |
+| `C13`     | Not completed yet   | Subject available, work pending             |
+| `BSQ`     | Not completed yet   | Project folder present                      |
+| `Rushes`  | Partially worked on | Rush project files are included             |
 
-- Writing and compiling C programs from the command line
-- Working with pointers, arrays, strings, and memory
-- Breaking problems into small, testable functions
-- Reading strict requirements and respecting coding constraints
-- Using Git to keep a record of my progress
+## What I learned
 
-This is an evolving record of my path through the 42 Piscine. New exercises and notes will be added as I continue.
+During this Piscine I studied and practiced:
+
+- C programming basics
+- Shell commands and scripting
+- Variables, conditions, loops, and functions
+- Pointers and memory
+- Arrays and strings
+- Recursion and mathematical logic
+- Function structure and modular programming
+- Program argument handling
+- Debugging and fixing mistakes in small exercises
+
+## Notes
+
+This is a record of my progress during the 42 Piscine. The repository shows what I have studied, what I completed, and what is still left to continue later.
+
+The main goal of this project is to keep track of my learning path and the work done during those intense weeks of challenge.
