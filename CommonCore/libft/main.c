@@ -3,5 +3,5 @@
 
 int main(void)
 {
-    printf("%s", ft_strrchr("hello world", 'o'));
+    printf("%d", ft_strncmp("hello world", "hello wor3ld", 5));
 }
