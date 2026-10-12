@@ -9,6 +9,8 @@ int ft_strncmp(const char *s1, const char *s2, size_t n)
     {
         if (s1[leng] != s2[leng])
             return ((unsigned char)s1[leng] - (unsigned char)s2[leng]);
+        if (s1[leng] == '\0')
+            return (0);
         leng++;
     }
     return (0);
