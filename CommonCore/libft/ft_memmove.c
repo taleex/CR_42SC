@@ -4,7 +4,7 @@ void *ft_memmove(void *dest, const void *src, size_t n)
 {
     size_t leng;
     char *destmov;
-    const char *srcmov;
+    char *srcmov;
 
     if (!dest && !src)
         return (NULL);
