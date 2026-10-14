@@ -3,5 +3,5 @@
 
 int main(void)
 {
-    printf("%s", ft_strnstr("hello my friends", "hello", 5));
+    printf("%d", ft_atoi("123"));
 }
