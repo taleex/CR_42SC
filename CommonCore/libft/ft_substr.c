@@ -3,13 +3,23 @@
 char *ft_substr(char const *s, unsigned int start, size_t len)
 {
     char *dst;
-    size_t leng;
+    size_t leng_i;
+    size_t leng_j;
 
-    leng = 0;
-    while (leng < len && s[leng])
+    dst = malloc(len + 1);
+    if (!dst)
+        return (NULL);
+    leng_i = 0;
+    leng_j = 0;
+    while (s[leng_i])
     {
-        leng++;
+        if (leng_i >= start && leng_j < len)
+        {
+            dst[leng_j] = s[leng_i];
+            leng_j++;
+        }
+        leng_i++;
     }
-
-    dst =
+    dst[leng_j] = '\0';
+    return (dst);
 }
