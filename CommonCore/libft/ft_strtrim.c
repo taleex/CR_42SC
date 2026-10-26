@@ -6,7 +6,7 @@
 /*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:23:35 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/10/26 16:25:05 by username         ###   ########.fr       */
+/*   Updated: 2026/10/26 16:53:13 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,11 +40,14 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (end > start && ft_is_space(s1[end - 1], set))
 		end--;
 	res = malloc (end - start + 1);
-	while (s1[end - start - 1])
+	if (!res)
+		return (NULL);
+	i = 0;
+	while (start + i < end)
 	{
-		res[start] = s1[end - start - 1];
-		start++;
+		res[i] = s1[start + i];
+		i++;
 	}
-	res[start] = '\0';
+	res[i] = '\0';
 	return (res);
 }
