@@ -3,49 +3,85 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/26 17:42:04 by username          #+#    #+#             */
-/*   Updated: 2026/10/26 18:05:55 by username         ###   ########.fr       */
+/*   Updated: 2026/10/27 13:39:59 by jorgferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_count_words(char *s, char c)
+static size_t	ft_count_words(char const *s, char c)
 {
-	int count;
-	int i;
+	size_t	count;
+	size_t	i;
 
+	count = 0;
 	i = 0;
 	while (s[i])
 	{
-		while (s[i] == c)
+		while (s[i] && s[i] == c)
 			i++;
-		while (s[i] != c && s[i])
+		if (s[i])
+		{
 			count++;
-		while (s[i] != c && s[i])
-			i++;
+			while (s[i] && s[i] != c)
+				i++;
+		}
 	}
 	return (count);
 }
 
-char	**ft_split(char const *s, char c)
+static void	*ft_free_all(char **arr, size_t n)
 {
-	int		strlen;
-	int		j;
-	char	**res;
+	size_t	i;
 
-	strlen = ft_count_words(c, s);
-	res = malloc(ft_count_words() + 1);
-	while (s[j])
+	i = 0;
+	while (i < n)
 	{
-		while (s[j] != c)
-		{
-			res[i][j] = s[j];
-			j++;
-		}
+		free(arr[i]);
 		i++;
 	}
-	return (res);
+	free(arr);
+	return (NULL);
+}
+
+static char	**ft_fill_array(char **arr, char const *s, char c)
+{
+	size_t	i;
+	size_t	j;
+	size_t	wrdzise;
+
+	i = 0;
+	j = 0;
+	while (s[i])
+	{
+		while (s[i] && s[i] == c)
+			i++;
+		if (s[i])
+		{
+			wrdzise = 0;
+			while (s[wrdzise + i] && s[wrdzise + i] != c)
+				wrdzise++;
+			arr[j] = ft_substr(s, i, wrdzise);
+			if (!arr[j])
+				return (ft_free_all(arr, j));
+			i += wrdzise;
+			j++;
+		}
+	}
+	return (arr);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**arr;
+
+	if (!s)
+		return (NULL);
+	arr = ft_calloc(ft_count_words(s, c) + 1, sizeof(char *));
+	if (!arr)
+		return (NULL);
+	return (ft_fill_array(arr, s, c));
 }

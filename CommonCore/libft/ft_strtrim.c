@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:23:35 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/10/26 16:53:13 by username         ###   ########.fr       */
+/*   Updated: 2026/10/27 13:41:38 by jorgferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_is_space(char c, char *set)
+int	ft_is_space(char const c, char const *set)
 {
-	int leng;
+	int	leng;
 
 	leng = 0;
 	while (set[leng])
@@ -28,10 +28,10 @@ int	ft_is_space(char c, char *set)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t start;
-	size_t end;
-	size_t i;
-	char *res;
+	size_t	start;
+	size_t	end;
+	size_t	i;
+	char	*res;
 
 	start = 0;
 	while (s1[start] && ft_is_space(s1[start], set))
