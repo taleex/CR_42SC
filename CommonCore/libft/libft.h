@@ -6,7 +6,7 @@
 /*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:25:20 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/10/27 13:45:10 by jorgferr         ###   ########.fr       */
+/*   Updated: 2026/10/28 11:49:40 by jorgferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,4 +46,5 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 #endif
