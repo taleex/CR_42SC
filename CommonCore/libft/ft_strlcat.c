@@ -6,7 +6,7 @@
 /*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:13:56 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/10/19 15:14:40 by jorgferr         ###   ########.fr       */
+/*   Updated: 2026/10/28 14:49:53 by jorgferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t siz)
 	i = 0;
 	while (src[src_leng])
 		src_leng++;
+	if (siz == 0 && !dst)
+		return (src_leng);
 	while (dst_leng < siz && dst[dst_leng])
 		dst_leng++;
 	if (dst_leng == siz)

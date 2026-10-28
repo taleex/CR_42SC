@@ -6,7 +6,7 @@
 /*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 11:57:49 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/10/19 11:58:16 by jorgferr         ###   ########.fr       */
+/*   Updated: 2026/10/28 14:45:12 by jorgferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	*ft_calloc(size_t n, size_t size)
 {
 	char	*res;
 
+	if (n != 0 && size > SIZE_MAX / n)
+		return (NULL);
 	res = malloc(size * n);
 	if (!res)
 		return (NULL);
