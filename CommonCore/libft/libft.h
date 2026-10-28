@@ -6,7 +6,7 @@
 /*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:25:20 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/10/28 13:51:43 by jorgferr         ###   ########.fr       */
+/*   Updated: 2026/10/28 14:15:15 by jorgferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,4 +52,5 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 void	ft_putchar_fd(char c, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
 #endif

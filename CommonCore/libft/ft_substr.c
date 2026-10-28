@@ -6,7 +6,7 @@
 /*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:22:02 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/10/19 15:23:58 by jorgferr         ###   ########.fr       */
+/*   Updated: 2026/10/28 14:13:07 by jorgferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	leng_i;
 	size_t	leng_j;
 
+	if (!s)
+		return (NULL);
 	dst = malloc(len + 1);
 	if (!dst)
 		return (NULL);
