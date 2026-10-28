@@ -6,7 +6,7 @@
 /*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 17:52:37 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/10/28 11:49:17 by jorgferr         ###   ########.fr       */
+/*   Updated: 2026/10/28 12:13:14 by jorgferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 int	main(void)
 {
-	printf ("%s", ft_strmapi(670));
+	printf ("s");
 	return (0);
 }
