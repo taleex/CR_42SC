@@ -6,15 +6,15 @@
 /*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 13:45:15 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/10/27 15:49:14 by jorgferr         ###   ########.fr       */
+/*   Updated: 2026/10/28 11:38:11 by jorgferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_number_leng(long nbr)
+static int	ft_number_leng(long nbr)
 {
-	size_t count;
+	size_t	count;
 
 	count = 0;
 	if (nbr < 0)
@@ -34,18 +34,28 @@ int	ft_number_leng(long nbr)
 
 char	*ft_itoa(int n)
 {
-	int is_negative;
-	int leng;
-	long nbr;
+	int		leng;
+	long	nbr;
+	char	*res;
 
-	is_negative = 0;
 	nbr = n;
 	leng = ft_number_leng(nbr);
-	printf(" %d\n %d", leng,is_negative);
-	if (n < 0)
+	res = malloc(leng + 1);
+	if (!res)
+		return (NULL);
+	res[leng] = '\0';
+	if (nbr == 0)
+		res[0] = '0';
+	if (nbr < 0)
 	{
-		is_negative = -1;
-		n = -n;
+		res[0] = '-';
+		nbr = -nbr;
 	}
-	return ("oopise");
+	while (nbr > 0)
+	{
+		leng--;
+		res[leng] = nbr % 10 + '0';
+		nbr = nbr / 10;
+	}
+	return (res);
 }
