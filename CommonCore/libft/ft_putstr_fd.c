@@ -5,28 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/28 13:20:12 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/10/28 13:27:49 by jorgferr         ###   ########.fr       */
+/*   Created: 2026/10/28 13:51:53 by jorgferr          #+#    #+#             */
+/*   Updated: 2026/10/28 14:02:39 by jorgferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
-	long	nbr;
+	int	i;
 
-	if (fd < 0)
+	if (!s)
 		return ;
-	nbr = n;
-	if (nbr < 0)
+	i = 0;
+	while (s[i])
 	{
-		ft_putchar_fd('-', fd);
-		nbr = -nbr;
+		ft_putchar_fd(s[i], fd);
+		i++;
 	}
-	if (nbr > 9)
-	{
-		ft_putnbr_fd (nbr / 10, fd);
-	}
-	ft_putchar_fd ((nbr % 10) + '0', fd);
 }

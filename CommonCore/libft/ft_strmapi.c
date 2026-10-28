@@ -6,7 +6,7 @@
 /*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 11:50:00 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/10/28 12:56:41 by jorgferr         ###   ########.fr       */
+/*   Updated: 2026/10/28 14:01:40 by jorgferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	size_t	i;
 	char	*res;
 
+	if (!s || !f)
+		return (NULL);
 	i = 0;
 	res = malloc(ft_strlen(s) + 1);
 	if (!res)
