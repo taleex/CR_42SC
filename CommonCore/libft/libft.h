@@ -6,7 +6,7 @@
 /*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:25:20 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/10/28 14:43:17 by jorgferr         ###   ########.fr       */
+/*   Updated: 2026/10/28 15:56:58 by jorgferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@
 # include <unistd.h>
 # include <stdint.h>
 
-// temp
-# include <stdio.h>
 
 void	ft_bzero(void *s, size_t n);
 int		ft_isalnum(int c);
