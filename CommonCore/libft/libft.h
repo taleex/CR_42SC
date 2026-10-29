@@ -6,7 +6,7 @@
 /*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:25:20 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/10/29 10:38:40 by jorgferr         ###   ########.fr       */
+/*   Updated: 2026/10/29 11:11:05 by jorgferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,4 +57,7 @@ void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 t_list	*ft_lstnew(void *content);
+void	ft_lstadd_front(t_list **lst, t_list *new);
+unsigned int ft_lstsize(t_list *lst);
+
 #endif
