@@ -6,12 +6,12 @@
 /*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 11:57:49 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/10/29 10:01:32 by jorgferr         ###   ########.fr       */
+/*   Updated: 2026/10/29 11:21:21 by jorgferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-# include <stdint.h>
+#include <stdint.h>
 
 void	*ft_calloc(size_t n, size_t size)
 {

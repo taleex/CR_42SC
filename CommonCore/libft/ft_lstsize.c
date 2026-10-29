@@ -6,19 +6,19 @@
 /*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/29 11:10:57 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/10/29 11:15:24 by jorgferr         ###   ########.fr       */
+/*   Updated: 2026/10/29 11:20:44 by jorgferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int ft_lstsize(t_list *lst)
+unsigned int	ft_lstsize(t_list *lst)
 {
-	unsigned int i;
-	t_list *temp_var;
+	unsigned int	i;
+	t_list			*temp_var;
 
 	i = 0;
-	temp_var = (t_list*)lst;
+	temp_var = (t_list *)lst;
 	while (temp_var)
 	{
 		i++;
