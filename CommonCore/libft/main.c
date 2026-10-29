@@ -6,7 +6,7 @@
 /*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 17:52:37 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/10/28 13:27:15 by jorgferr         ###   ########.fr       */
+/*   Updated: 2026/10/29 10:10:04 by jorgferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 int	main(void)
 {
-	ft_putnbr_fd(67, 1);
+	ft_lstnew("hey");
 	return (0);
 }
