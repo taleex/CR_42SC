@@ -6,7 +6,7 @@
 /*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 17:52:37 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/10/30 14:59:58 by username         ###   ########.fr       */
+/*   Updated: 2026/10/30 17:20:41 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,12 @@
 
 int	main(void)
 {
-	char ptr[] = "ui";
-	ft_memset(ptr, 65, 2);
+    char ptr[] = "uisssss";
+	char drt[20] = "opaaaaaaaaa";
 
-	printf("%s", ptr);
-	return (0);
+	ft_memmove(drt, ptr, 10);
+
+	printf("%s", drt);
+
+    return (0);
 }

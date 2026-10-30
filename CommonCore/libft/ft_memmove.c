@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:03:53 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/10/19 15:06:02 by jorgferr         ###   ########.fr       */
+/*   Updated: 2026/10/30 17:25:06 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t	leng;
+	size_t	i;
 	char	*destmov;
 	char	*srcmov;
 
@@ -22,20 +22,21 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		return (NULL);
 	destmov = (char *)dest;
 	srcmov = (char *)src;
-	leng = 0;
 	if (destmov > srcmov)
 	{
-		while (n--)
+		while (n > 0)
 		{
+			n--;
 			destmov[n] = srcmov[n];
 		}
 	}
 	else
 	{
-		while (n--)
+		i = 0;
+		while (i < n)
 		{
-			destmov[leng] = srcmov[leng];
-			leng++;
+			destmov[i] = srcmov[i];
+			i++;
 		}
 	}
 	return (destmov);
