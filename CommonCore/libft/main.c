@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 17:52:37 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/10/29 13:50:11 by jorgferr         ###   ########.fr       */
+/*   Updated: 2026/10/30 14:59:58 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,9 @@
 
 int	main(void)
 {
+	char ptr[] = "ui";
+	ft_memset(ptr, 65, 2);
+
+	printf("%s", ptr);
 	return (0);
 }
