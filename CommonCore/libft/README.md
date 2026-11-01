@@ -203,6 +203,9 @@ This will provide an easy and quick way to compile the main file. See the exampl
     https://www.youtube.com/@nesoacademy
     https://www.youtube.com/@programizstudios
 
+#### Testing:
+	https://github.com/0x050f/libft-war-machine
+
 #### My Peers
 
 #### Claude & Gemini
@@ -216,4 +219,17 @@ This will provide an easy and quick way to compile the main file. See the exampl
 	I used checklists to track the completion of the project for organizational purposes.
 
 	Examples of prompts used:
-   ->
+
+**Explain without revealing code**
+
+  	"Explain how [function] works conceptually and what the tricky parts are. Do not show any code or pseudocode; use words and small input/output examples."
+	- "I'm stuck on [problem]. Don't give me the solution. Ask me guiding questions, one at a time, and wait for my answer."
+
+**Explain in other words**
+
+	"Explain [function] in simpler words, as if to someone new to C. Then ask me to explain it back to you and tell me where I'm wrong."
+	- "I read this man page description: [paste it]. Rephrase it and tell me what it means for the return value and the edge cases."
+
+**Check my understanding**
+
+	"Here is my code and my own explanation of it. Don't rewrite the code. Tell me what my explanation gets wrong or leaves out, and ask me questions about the weak parts."
