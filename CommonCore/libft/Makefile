@@ -25,5 +25,5 @@ re: fclean all
 main:
 	$(CC) $(CFLAGS) main.c -L. -lft -o test
 
-mainclean:
+clmain:
 	$(RM) test

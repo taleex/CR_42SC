@@ -6,7 +6,7 @@
 /*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:16:27 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/10/30 11:58:16 by username         ###   ########.fr       */
+/*   Updated: 2026/11/01 14:11:37 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 size_t	ft_strlen(const char *s)
 {
-	size_t	leng;
+	size_t	len;
 
-	leng = 0;
-	while (s[leng])
-		leng++;
-	return (leng);
+	len = 0;
+	while (s[len])
+		len++;
+	return (len);
 }
