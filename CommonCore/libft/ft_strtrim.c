@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:23:35 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/10/27 13:41:38 by jorgferr         ###   ########.fr       */
+/*   Updated: 2026/11/01 17:25:31 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_is_space(char const c, char const *set)
+int	ft_is_in_set(char const c, char const *set)
 {
 	int	leng;
 
@@ -34,10 +34,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*res;
 
 	start = 0;
-	while (s1[start] && ft_is_space(s1[start], set))
+	while (s1[start] && ft_is_in_set(s1[start], set))
 		start++;
 	end = ft_strlen(s1);
-	while (end > start && ft_is_space(s1[end - 1], set))
+	while (end > start && ft_is_in_set(s1[end - 1], set))
 		end--;
 	res = malloc (end - start + 1);
 	if (!res)

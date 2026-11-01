@@ -3,34 +3,34 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 11:55:07 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/10/19 11:56:29 by jorgferr         ###   ########.fr       */
+/*   Updated: 2026/11/01 17:03:16 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_atoi(const char *nptr)
 {
-	int	leng;
+	int	len;
 	int	flag;
 	int	res;
 
-	leng = 0;
+	len = 0;
 	flag = 1;
 	res = 0;
-	while ((nptr[leng] == ' ') || (nptr[leng] >= 9 && 13 >= nptr[leng]))
-		leng++;
-	if (nptr[leng] == '-' || nptr[leng] == '+')
+	while ((nptr[len] == ' ') || (nptr[len] >= 9 && 13 >= nptr[len]))
+		len++;
+	if (nptr[len] == '-' || nptr[len] == '+')
 	{
-		if (nptr[leng] == '-')
+		if (nptr[len] == '-')
 			flag = -1;
-		leng++;
+		len++;
 	}
-	while (nptr[leng] >= '0' && '9' >= nptr[leng])
+	while (nptr[len] >= '0' && '9' >= nptr[len])
 	{
-		res = (res * 10) + nptr[leng] - '0';
-		leng++;
+		res = (res * 10) + nptr[len] - '0';
+		len++;
 	}
 	return (res * flag);
 }

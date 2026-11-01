@@ -20,10 +20,3 @@ fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
-
-
-main:
-	$(CC) $(CFLAGS) main.c -L. -lft -o test
-
-clmain:
-	$(RM) test

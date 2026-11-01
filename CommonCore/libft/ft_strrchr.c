@@ -3,25 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:21:10 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/10/28 13:44:50 by jorgferr         ###   ########.fr       */
+/*   Updated: 2026/11/01 16:00:39 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int	leng;
+	int	len;
 
-	leng = 0;
-	while (s[leng])
-		leng++;
-	while (leng >= 0)
+	len = 0;
+	while (s[len])
+		len++;
+	while (len >= 0)
 	{
-		if (s[leng] == (char)c)
-			return ((char *)s + leng);
-		leng--;
+		if (s[len] == (char)c)
+			return ((char *)s + len);
+		len--;
 	}
 	return (0);
 }

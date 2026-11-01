@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jorgferr <jorgferr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: username <username@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 13:45:15 by jorgferr          #+#    #+#             */
-/*   Updated: 2026/10/28 11:38:11 by jorgferr         ###   ########.fr       */
+/*   Updated: 2026/11/01 17:31:50 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_number_leng(long nbr)
+static int	ft_number_len(long nbr)
 {
 	size_t	count;
 
@@ -34,16 +34,16 @@ static int	ft_number_leng(long nbr)
 
 char	*ft_itoa(int n)
 {
-	int		leng;
+	int		len;
 	long	nbr;
 	char	*res;
 
 	nbr = n;
-	leng = ft_number_leng(nbr);
-	res = malloc(leng + 1);
+	len = ft_number_len(nbr);
+	res = malloc(len + 1);
 	if (!res)
 		return (NULL);
-	res[leng] = '\0';
+	res[len] = '\0';
 	if (nbr == 0)
 		res[0] = '0';
 	if (nbr < 0)
@@ -53,8 +53,8 @@ char	*ft_itoa(int n)
 	}
 	while (nbr > 0)
 	{
-		leng--;
-		res[leng] = nbr % 10 + '0';
+		len--;
+		res[len] = nbr % 10 + '0';
 		nbr = nbr / 10;
 	}
 	return (res);
