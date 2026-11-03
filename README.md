@@ -1,58 +1,61 @@
-# 42 Piscine - Progress
+# 42 Piscine
 
-This repository is my path through the 42 Piscine.
+I completed the 42 Piscine and moved on to the 42 Common Core. This repository brings together my Piscine subjects, exercises, exam practice, and rush projects.
 
-It contains the folders, exercises, and projects I worked on during the four weeks of the challenge. It is not a completed final archive, but it shows the work I did, the modules I studied, and the topics I practiced.
+## Repository contents
 
-## Project structure
+| Section | Contents |
+| --- | --- |
+| [Piscine modules](#piscine-modules) | Shell and C subjects, with exercise folders where available |
+| [Exam practice](#exam-practice) | C exam practice exercises |
+| [Rush projects](#rush-projects) | Rush project files and subject documents |
 
-The repository is organized by module. Each folder contains the exercises or project files related to that part of the Piscine.
+## Piscine modules
 
-- `Shell00` and `Shell01`: shell basics and shell scripting exercises
-- `C00` to `C07`: core C exercises covering fundamentals, pointers, strings, number handling, recursion, and arguments
-- `Rushes`: larger project-style work
-- `BSQ`: project folder for the bigger challenge
-- `C08` to `C13`: later C modules and subjects that were not fully covered yet
+Each subject links to its PDF. Exercise folders are linked where they are present in the repository.
 
-## Modules covered
+| Module | Subject | Exercises |
+| --- | --- | --- |
+| Shell00 | [Subject](42-Piscine/Shell00/Shell00.pdf) | [Exercises](42-Piscine/Shell00/Shell00/) |
+| Shell01 | [Subject](42-Piscine/Shell01/Shell01.pdf) | [Exercises](42-Piscine/Shell01/Shell01/) |
+| C00 | [Subject](42-Piscine/C00/C00.pdf) | [Exercises](42-Piscine/C00/C00/) |
+| C01 | [Subject](42-Piscine/C01/C01.pdf) | [Exercises](42-Piscine/C01/C01/) |
+| C02 | [Subject](42-Piscine/C02/C02.pdf) | [Exercises](42-Piscine/C02/C02/) |
+| C03 | [Subject](42-Piscine/C03/C03.pdf) | [Exercises](42-Piscine/C03/C03/) |
+| C04 | [Subject](42-Piscine/C04/C04.pdf) | [Exercises](42-Piscine/C04/C04/) |
+| C05 | [Subject](42-Piscine/C05/C05.pdf) | [Exercises](42-Piscine/C05/C05/) |
+| C06 | [Subject](42-Piscine/C06/C06.pdf) | [Exercises](42-Piscine/C06/C06/) |
+| C07 | [Subject](42-Piscine/C07/C07.pdf) | [Exercises](42-Piscine/C07/C07/) |
+| C08 | [Subject](42-Piscine/C08/C08.pdf) | — |
+| C09 | [Subject](42-Piscine/C09/C09.pdf) | — |
+| C10 | [Subject](42-Piscine/C10/C10.pdf) | — |
+| C11 | [Subject](42-Piscine/C11/C11.pdf) | — |
+| C12 | [Subject](42-Piscine/C12/C12.pdf) | — |
+| C13 | [Subject](42-Piscine/C13/C13.pdf) | — |
+| BSQ | [Subject](42-Piscine/BSQ/BSQ.pdf) | — |
 
-| Module    | Status              | Notes                                       |
-| --------- | ------------------- | ------------------------------------------- |
-| `Shell00` | Studied             | Shell basics and command-line exercises     |
-| `Shell01` | Studied             | Shell scripting and practical command usage |
-| `C00`     | Studied             | Basic C syntax, printing, conditions        |
-| `C01`     | Studied             | Pointers and memory basics                  |
-| `C02`     | Studied             | Strings and character handling              |
-| `C03`     | Studied             | String functions and manipulation           |
-| `C04`     | Studied             | Number conversion and parsing               |
-| `C05`     | Studied             | Recursion and mathematical functions        |
-| `C06`     | Studied             | Program arguments                           |
-| `C07`     | In progress         | Memory and array-related work               |
-| `C08`     | Not completed yet   | Subject available, work pending             |
-| `C09`     | Not completed yet   | Subject available, work pending             |
-| `C10`     | Not completed yet   | Subject available, work pending             |
-| `C11`     | Not completed yet   | Subject available, work pending             |
-| `C12`     | Not completed yet   | Subject available, work pending             |
-| `C13`     | Not completed yet   | Subject available, work pending             |
-| `BSQ`     | Not completed yet   | Project folder present                      |
-| `Rushes`  | Partially worked on | Rush project files are included             |
+## Exam practice
 
-## What I learned
+The [Exam-Practice folder](Exam-Practice/) contains small C exercises for review. Each exercise is in its own folder:
 
-During this Piscine I studied and practiced:
+| Exercises | Exercises | Exercises |
+| --- | --- | --- |
+| [aff_a](Exam-Practice/aff_a/) | [aff_first_param](Exam-Practice/aff_first_param/) | [aff_last_param](Exam-Practice/aff_last_param/) |
+| [alpha_mirror](Exam-Practice/alpha_mirror/) | [first_word](Exam-Practice/first_word/) | [ft_atoi](Exam-Practice/ft_atoi/) |
+| [ft_countdown](Exam-Practice/ft_countdown/) | [ft_print_numbers](Exam-Practice/ft_print_numbers/) | [ft_putnbr](Exam-Practice/ft_putnbr/) |
+| [ft_putstr](Exam-Practice/ft_putstr/) | [ft_strcmp](Exam-Practice/ft_strcmp/) | [ft_strcpy](Exam-Practice/ft_strcpy/) |
+| [ft_strdup](Exam-Practice/ft_strdup/) | [ft_strlen](Exam-Practice/ft_strlen/) | [ft_swap](Exam-Practice/ft_swap/) |
+| [hello](Exam-Practice/hello/) | [inter](Exam-Practice/inter/) | [maff_revalpha](Exam-Practice/maff_revalpha/) |
+| [max](Exam-Practice/max/) | [only_a](Exam-Practice/only_a/) | [repeat_alpha](Exam-Practice/repeat_alpha/) |
+| [reverse_bits](Exam-Practice/reverse_bits/) | [rev_print](Exam-Practice/rev_print/) | [rot_13](Exam-Practice/rot_13/) |
+| [rotone](Exam-Practice/rotone/) | [search_and_replace](Exam-Practice/search_and_replace/) | [ulstr](Exam-Practice/ulstr/) |
 
-- C programming basics
-- Shell commands and scripting
-- Variables, conditions, loops, and functions
-- Pointers and memory
-- Arrays and strings
-- Recursion and mathematical logic
-- Function structure and modular programming
-- Program argument handling
-- Debugging and fixing mistakes in small exercises
+## Rush projects
 
-## Notes
+- [Rush00](Rushes/Rush00/) — project source files
+- [Rush01](Rushes/Rush01/) — [subject PDF](Rushes/Rush01/rush01.pdf)
+- [Rush02](Rushes/Rush02/) — [subject PDF](Rushes/Rush02/Rush02.pdf) and dictionary files
 
-This is a record of my progress during the 42 Piscine. The repository shows what I have studied, what I completed, and what is still left to continue later.
+## About
 
-The main goal of this project is to keep track of my learning path and the work done during those intense weeks of challenge.
+This repository is a record of my work and learning during the Piscine. It is organized to make the subjects and practice material easy to browse; the linked folders show what is included for each part.
